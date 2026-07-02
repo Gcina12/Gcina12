@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gcina — Software Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Animated background -->
+  <div class="background">
+    <span class="ball"></span>
+    <span class="ball"></span>
+    <span class="ball"></span>
+    <span class="ball"></span>
+    <span class="ball"></span>
+    <span class="ball"></span>
+  </div>
+
+  <!-- Nav -->
+  <header class="site-header">
+    <div class="logo">gcina<span class="logo-dot">.</span>dev</div>
+    <nav class="site-nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <p class="eyebrow">BCom IS student</p>
+        <h1>Gcina Rololo</h1>
+        <p class="hero-tagline">Building with C#, .NET, and a growing FinTech toolkit  one commit at a time.</p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <div class="profile-photo" id="profile-photo">
+          <img src="gcinaportfoliopicture.jpeg" alt="Gcina" class="profile-photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="panel" id="about">
+      <h2><span class="section-index">01</span> About</h2>
+      <p>
+        I'm a software engineering student currently working through the IFS313E
+        Emergent Technologies course, alongside a FinTech winter school program.
+        My foundation is in C# and the .NET ecosystem — from console fundamentals
+        through OOP to building full ASP.NET Web Forms applications — and I'm now
+        extending that into FinTech tooling: Node.js, Python, Docker, and API
+        integrations like OpenBank. I learn by building things myself, step by
+        step, rather than copying finished code.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section class="panel" id="skills">
+      <h2><span class="section-index">02</span> Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <ul>
+            <li>C#</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Frameworks &amp; Platforms</h3>
+          <ul>
+            <li>ASP.NET Web Forms</li>
+            <li>.NET 8</li>
+            <li>Node.js</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>Docker</li>
+            <li>Visual Studio 2022</li>
+          </ul>
+        </div>
+
+        <div class="skill-card">
+          <h3>Currently Learning</h3>
+          <ul>
+            <li>OpenBank API</li>
+            <li>FinTech systems design</li>
+            <li>Emergent technologies</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="panel" id="projects">
+      <h2><span class="section-index">03</span> Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <p class="project-status">In Progress</p>
+          <h3>Personal Finance Dashboard</h3>
+          <p>
+            A dashboard for tracking personal finances, integrating the OpenBank
+            API through a Node.js backend, with Python for data processing and
+            Docker for containerized deployment.
+          </p>
+          <ul class="tag-list">
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>Docker</li>
+            <li>OpenBank API</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <p class="project-status">Complete</p>
+          <h3>Weather Forecast App</h3>
+          <p>
+            An ASP.NET application that chains two APIs — geocoding and forecast
+            data from Open-Meteo — using HttpClient and async/await, with
+            Newtonsoft.Json for parsing and Bootstrap 5 for the interface.
+          </p>
+          <ul class="tag-list">
+            <li>ASP.NET</li>
+            <li>C#</li>
+            <li>REST APIs</li>
+            <li>Bootstrap 5</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <p class="project-status">Academic</p>
+          <h3>KasiSkillz Echange</h3>
+          <p>
+            A site built to act as bridging gap between local community who seek services and those who can offer the services. It was <br>
+            built using ASP.NET Web Forms, Master Pages, and User Controls to create a modular and maintainable architecture.
+          </p>
+          <ul class="tag-list">
+            <li>ASP.NET Web Forms</li>
+            <li>Master Pages</li>
+            <li>User Controls</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="panel" id="education">
+      <h2><span class="section-index">04</span> Education</h2>
+      <div class="education-item">
+        <h3>Software Engineering — University Student</h3>
+        <p>Coursework includes IFS313E Emergent Technologies, alongside a FinTech winter school program covering practical API and backend development.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="panel panel-contact" id="contact">
+      <h2><span class="section-index">05</span> Get in Touch</h2>
+      <p>Open to internship and junior developer opportunities.</p>
+      <div class="contact-links">
+        <a href="mailto:your.email@example.com" class="btn btn-primary">Email Me</a>
+        <a href="#" class="btn btn-ghost">GitHub</a>
+        <a href="#" class="btn btn-ghost">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Built by Gcina.</p>
+  </footer>
+
+</body>
+</html>
