@@ -1,202 +1,192 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gcina — Software Engineering Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0a1128">
+    <meta name="description" content="Gcina Lucky Rololo is a final-year Information Systems student at the University of Fort Hare, building thoughtful software across .NET, web and fintech.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gcina Lucky Rololo | Information Systems & Software">
+    <meta property="og:description" content="A final-year Information Systems student building practical software and fintech projects in South Africa.">
+    <meta property="og:image" content="favicon.svg">
+    <meta name="color-scheme" content="dark">
+    <title>Gcina Lucky Rololo | Information Systems & Software</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Animated background -->
-  <div class="background">
-    <span class="ball"></span>
-    <span class="ball"></span>
-    <span class="ball"></span>
-    <span class="ball"></span>
-    <span class="ball"></span>
-    <span class="ball"></span>
-  </div>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Gcina Rololo, home">gcina<span>.</span>dev</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span></span><span></span>
+      </button>
+      <nav class="site-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <!-- Nav -->
-  <header class="site-header">
-    <div class="logo">gcina<span class="logo-dot">.</span>dev</div>
-    <nav class="site-nav">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- Hero -->
-    <section class="hero" id="hero">
-      <div class="hero-text">
-        <p class="eyebrow">BCom IS student</p>
-        <h1>Gcina Rololo</h1>
-        <p class="hero-tagline">Building with C#, .NET, and a growing FinTech toolkit  one commit at a time.</p>
-
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
-        </div>
-      </div>
-
-      <div class="hero-photo">
-        <div class="profile-photo" id="profile-photo">
-          <img src="gcinaportfoliopicture.jpeg" alt="Gcina" class="profile-photo">
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class="panel" id="about">
-      <h2><span class="section-index">01</span> About</h2>
-      <p>
-        I'm a BCom - Information Systems student currently working through the IFS303E
-        Systems development and IFS324 Mobile Application courses, alongside a FinTech winter school program.
-        My foundation is in C# and the .NET ecosystem — from console fundamentals
-        through OOP to building full ASP.NET Web Forms applications — and I'm now
-        extending that into FinTech tooling: Node.js, Python, Docker, and API
-        integrations like OpenBank. I learn by building things myself, step by
-        step, rather than copying finished code
-      </p>
-    </section>
-
-    <!-- Skills -->
-    <section class="panel" id="skills">
-      <h2><span class="section-index">02</span> Skills</h2>
-      <div class="skills-grid">
-
-        <div class="skill-card">
-          <h3>Languages</h3>
-          <ul>
-            <li>C#</li>
-            <li>Python</li>
-            <li>JavaScript</li>
-          </ul>
+    <main id="main">
+      <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="terminal-label"><span class="status-dot"></span> South Africa <span class="label-divider">/</span> Information Systems</p>
+          <p class="eyebrow">Hello, I’m</p>
+          <h1 id="hero-title">Gcina Lucky<br><span>Rololo</span></h1>
+          <p class="hero-role">Final-year BCom Information Systems student <span class="role-cursor" aria-hidden="true">_</span></p>
+          <p class="hero-description">I turn what I learn into useful software — from .NET applications to web products and fintech ideas. Graduating in 2027 at the University of Fort Hare.</p>
+          <p class="hero-ai-note"><span aria-hidden="true">✳</span> AI-assisted. Human-reviewed. I build and understand every step.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my projects <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#contact">Let’s connect</a>
+            <a class="button button-secondary cv-link" href="#" hidden>Download CV <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-meta" aria-label="Current opportunities">
+            <span><span class="status-dot"></span> Open to graduate opportunities</span>
+            <span class="meta-separator" aria-hidden="true">·</span>
+            <span>Honours applicant</span>
+          </div>
         </div>
 
-        <div class="skill-card">
-          <h3>Frameworks &amp; Platforms</h3>
-          <ul>
-            <li>ASP.NET Web Forms</li>
-            <li>.NET 8</li>
-            <li>Node.js</li>
-            <li>FastAPI</li>
-            <li>React</li>
-          </ul>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit-core"><span>GR</span></div>
+          <div class="visual-card visual-card-top"><span class="mini-icon">{"}"}</span><span>Curious by design</span></div>
+          <div class="visual-card visual-card-bottom"><span class="mini-pulse"></span><span>Learning. Building. Sharing.</span></div>
+          <span class="visual-coordinate">26°50' S&nbsp; 27°52' E</span>
+        </div>
+      </section>
+
+      <section class="content-section section-wrap" id="about" aria-labelledby="about-title">
+        <div class="section-heading reveal">
+          <p class="terminal-label">01 <span>/</span> a little context</p>
+          <h2 id="about-title">About <span>me</span></h2>
+        </div>
+        <div class="about-layout">
+          <div class="about-copy glass-card reveal">
+            <p class="lead-copy">I’m a final-year BCom Information Systems student at the University of Fort Hare, graduating in 2026.</p>
+            <p>I enjoy working where technology meets real-world needs. My projects span software development, fintech and business analysis, and I’m applying for an Honours in Information Systems alongside business analyst and junior developer roles.</p>
+            <p>As a UFH tutor, I help students build confidence with computer literacy and digital tools. I learn by building incrementally, asking questions and making sure I can explain the choices behind my code.</p>
+            <p class="inline-ai-note"><span aria-hidden="true">✳</span> I use AI as a learning and productivity assistant—not a substitute for my own thinking.</p>
+          </div>
+          <aside class="about-facts reveal" aria-label="At a glance">
+            <div class="fact-card glass-card"><span class="fact-index">01</span><div><strong>University of Fort Hare</strong><span>BCom Information Systems · 2026</span></div></div>
+            <div class="fact-card glass-card"><span class="fact-index">02</span><div><strong>Based in South Africa</strong><span>Eastern Cape roots, open to opportunity</span></div></div>
+            <div class="fact-card glass-card"><span class="fact-index">03</span><div><strong>Next step</strong><span>Honours · Business Analyst · Junior Developer</span></div></div>
+          </aside>
         </div>
 
-        <div class="skill-card">
-          <h3>Tools</h3>
-          <ul>
-            <li>Git &amp; GitHub</li>
-            <li>Docker</li>
-            <li>Visual Studio 2022</li>
-            <li>Neon / PostgreSQL</li>
-          </ul>
+        <div class="ai-work reveal">
+          <div class="ai-heading">
+            <div><p class="terminal-label">My process <span>/</span> responsible AI</p><h3>How I Work with AI</h3></div>
+            <span class="ai-tagline">AI-assisted. Human-reviewed.</span>
+          </div>
+          <div class="ai-cards" id="ai-cards"></div>
         </div>
+      </section>
 
-        <div class="skill-card">
-          <h3>Currently Learning</h3>
-          <ul>
-            <li>Open Banking APIs</li>
-            <li>FinTech systems design</li>
-            <li>Emergent technologies</li>
-          </ul>
+      <section class="content-section section-wrap" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading reveal">
+          <p class="terminal-label">02 <span>/</span> tools I reach for</p>
+          <h2 id="skills-title">Skills &amp; <span>toolkit</span></h2>
+          <p class="section-intro">A practical toolkit built through coursework, team projects and plenty of learning by doing.</p>
         </div>
+        <div class="skills-grid" id="skills-grid"></div>
+      </section>
 
-      </div>
-    </section>
+      <section class="content-section section-wrap" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="terminal-label">03 <span>/</span> selected work</p>
+          <h2 id="projects-title">Projects with <span>purpose</span></h2>
+          <p class="section-intro">A mix of independent builds, team sprints and concepts shaped around real problems.</p>
+        </div>
+        <div class="project-filters" role="group" aria-label="Filter projects">
+          <button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">All <span id="count-all"></span></button>
+          <button type="button" class="filter-button" data-filter="web" aria-pressed="false">Web</button>
+          <button type="button" class="filter-button" data-filter="mobile" aria-pressed="false">Mobile</button>
+          <button type="button" class="filter-button" data-filter="fintech" aria-pressed="false">Fintech</button>
+          <button type="button" class="filter-button" data-filter="group" aria-pressed="false">Group projects</button>
+        </div>
+        <div class="projects-grid" id="projects-grid" aria-live="polite"></div>
+      </section>
 
-    <!-- Projects -->
-    <section class="panel" id="projects">
-      <h2><span class="section-index">03</span> Projects</h2>
-      <div class="projects-grid">
+      <section class="content-section section-wrap" id="certifications" aria-labelledby="certifications-title">
+        <div class="section-heading reveal">
+          <p class="terminal-label">04 <span>/</span> recognition &amp; learning</p>
+          <h2 id="certifications-title">Certifications &amp; <span>achievements</span></h2>
+        </div>
+        <div class="cert-layout">
+          <div id="certificates-list" class="certificates-list"></div>
+          <aside class="achievement-card glass-card reveal">
+            <p class="terminal-label">A proud moment <span>/</span> UCT Winter School</p>
+            <div class="achievement"><span class="medal" aria-hidden="true">1st</span><p><strong>Personal website competition</strong><span>1st place · UCT Winter School</span></p></div>
+            <div class="achievement"><span class="medal silver" aria-hidden="true">2nd</span><p><strong>Dashboard project</strong><span>2nd place · UCT Winter School</span></p></div>
+          </aside>
+        </div>
+      </section>
 
-        <article class="project-card">
-          <p class="project-status">Hackathon Build</p>
-          <h3>WageBridge</h3>
-          <p>
-            An Earned Wage Access platform for South African SME employees, letting them
-            access already-earned salary before payday. Built a full-stack system with a
-            FastAPI backend, React dashboards for employees, employers, and admins, real
-            Open Banking sandbox integration for bank account linking and consent, and a
-            DebiCheck-style recovery simulation modeling how the platform reclaims advances
-            once real salaries clear — without ever touching the employer's payroll batch.
-          </p>
-          <ul class="tag-list">
-            <li>FastAPI</li>
-            <li>React</li>
-            <li>PostgreSQL (Neon)</li>
-            <li>Node.js</li>
-            <li>Open Banking API</li>
-          </ul>
-        </article>
+      <section class="content-section section-wrap" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading reveal">
+          <p class="terminal-label">05 <span>/</span> learning by helping</p>
+          <h2 id="experience-title">Experience</h2>
+        </div>
+        <div class="experience-list" id="experience-list"></div>
+      </section>
 
-        <article class="project-card">
-          <p class="project-status">In Progress</p>
-          <h3>Personal Finance Dashboard</h3>
-          <p>
-            A dashboard for tracking personal finances, integrating the OpenBank
-            API through a Node.js backend, with Python for data processing and
-            Docker for containerized deployment.
-          </p>
-          <ul class="tag-list">
-            <li>Node.js</li>
-            <li>Python</li>
-            <li>Docker</li>
-            <li>OpenBank API</li>
-          </ul>
-        </article>
+      <section class="content-section section-wrap contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-card glass-card reveal">
+          <div class="contact-copy">
+            <p class="terminal-label">06 <span>/</span> your next teammate?</p>
+            <h2 id="contact-title">Let’s make something <span>useful.</span></h2>
+            <p>I’m open to conversations about Honours study, business analysis and junior developer opportunities. Drop me a note—I’d be glad to hear what you’re working on.</p>
+            <div class="contact-actions" id="contact-links"></div>
+          </div>
+          <div class="contact-decoration" aria-hidden="true"><span>hello</span><i>_</i></div>
+        </div>
+      </section>
+    </main>
 
-        <article class="project-card">
-          <p class="project-status">Academic</p>
-          <h3>KasiSkillz Echange</h3>
-          <p>
-            A site built to act as bridging gap between local community who seek services and those who can offer the services. It was <br>
-            built using ASP.NET Web Forms, Master Pages, and User Controls to create a modular and maintainable architecture.
-          </p>
-          <ul class="tag-list">
-            <li>ASP.NET Web Forms</li>
-            <li>Master Pages</li>
-            <li>User Controls</li>
-          </ul>
-        </article>
+    <footer class="site-footer section-wrap">
+      <a class="brand" href="#home">gcina<span>.</span>dev</a>
+      <p>Designed and built with care in South Africa.</p>
+      <p class="footer-ai">Built with AI assistance · reviewed and understood by me.</p>
+      <a class="back-to-top" href="#home">Back to top ↑</a>
+    </footer>
 
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section class="panel" id="education">
-      <h2><span class="section-index">04</span> Education</h2>
-      <div class="education-item">
-        <h3>Information Systems — University Student</h3>
-        <p>Coursework includes IFS313E Emergent Technologies, alongside a FinTech winter school program covering practical API and backend development.</p>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section class="panel panel-contact" id="contact">
-      <h2><span class="section-index">05</span> Get in Touch</h2>
-      <p>Open to internship and junior Software developer, Business Analysis, and System analysis opportunities.</p>
-      <div class="contact-links">
-        <a href="mailto:rolologcina78@gmail.com" class="btn btn-primary">Email Me</a>
-        <a href="https://github.com/Gcina12" class="btn btn-ghost">GitHub</a>
-        <a href="https://www.linkedin.com/in/gcina-rololo/" class="btn btn-ghost">LinkedIn</a>
-        
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <p>&copy; 2026 Built by Gcina.</p>
-  </footer>
-
-</body>
+    <div class="assistant-widget">
+      <section class="assistant-panel" id="assistant-panel" aria-label="Ask about Gcina" aria-hidden="true">
+        <div class="assistant-header">
+          <div class="assistant-avatar" aria-hidden="true">G</div>
+          <div><strong>Ask about Gcina</strong><span><span class="status-dot"></span> Portfolio assistant</span></div>
+          <button class="assistant-close" type="button" aria-label="Close assistant">×</button>
+        </div>
+        <div class="assistant-messages" id="assistant-messages" role="log" aria-live="polite" aria-relevant="additions"></div>
+        <div class="assistant-suggestions" id="assistant-suggestions" aria-label="Suggested questions">
+          <button type="button">What projects has Gcina built?</button>
+          <button type="button">What’s his tech stack?</button>
+          <button type="button">Is he available for work?</button>
+        </div>
+        <form class="assistant-form" id="assistant-form">
+          <label class="sr-only" for="assistant-input">Ask a question about Gcina</label>
+          <input id="assistant-input" name="question" type="text" placeholder="Ask a question…" autocomplete="off" required>
+          <button type="submit" aria-label="Send question">↑</button>
+        </form>
+        <p class="assistant-footnote">Answers come from this portfolio · no AI API or tracking</p>
+      </section>
+      <button class="assistant-launcher" type="button" aria-expanded="false" aria-controls="assistant-panel">
+        <span class="launcher-icon" aria-hidden="true">✳</span><span>Ask about Gcina</span><span class="launcher-dot" aria-hidden="true"></span>
+      </button>
+    </div>
+  </body>
 </html>
